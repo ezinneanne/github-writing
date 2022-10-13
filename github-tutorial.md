@@ -122,19 +122,19 @@ Create a new branch,
 git checkout -b "new-branch"
 ```
 
-This will create a new branch on the repository, so I can make changes to it.
+This will create a new branch on the repository.
 
-![creating-new-branch](Screenshot_64.png)
+![creating-new-branch](Screenshot_63.png)
 
 
 Then, I will open my GitHub `README.md` on vscode text editor and make some changes.
 
-![Making-changes-in-my-file](Screenshot_63.png)
+![Making-changes-in-my-file](Screenshot_64.png)
 
 
-Then enter `git status `
+And enter `git status ` afterwards.
 
-This is a git command that shows you the current level of operations, detailing what you have done and what you need to do.
+This is a git command that shows you the current level of operations, detailing what you have done on the repository and what you need to do.
 
 ![checking-git-status](Screenshot_65.png)
 
@@ -161,13 +161,19 @@ git push –u origin "new-branch"
 
 This will move the changes to your repo on GitHub.
 
-Open your GitHub account and you will see something like this.
 
+## Pull request  <a name="Pull request"></a>
+Open your GitHub account and you will see something like this.
 
 ![github-comparing-the-changes](Screenshot_68.png)
 
-## Pull request  <a name="Pull request"></a>
 This is where pull requests come in. In this repo, we have made some changes and those changes are not into the main branch. So GitHub is asking us to make a pull request. Which is submitting those changes we have made to the main branch.
+
+Now, click on the `compare & pull request` button
+
+![github-comparing-the-changes](Screenshot_78.png)
+
+Add descriptive text in the comment box and click on `create pull request`
 
 ![making-pull-request](Screenshot_69.png)
 
