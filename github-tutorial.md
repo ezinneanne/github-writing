@@ -35,9 +35,7 @@ GitHub is a cloud platform that uses git technology. The application is used by 
 GitHub provides access to git command-line tools, a desktop GUI and a web-based interface to clone, commit and push projects.
 
 ## Why GitHub  <a name="Why GitHub"></a>
-There are other platforms that use git technology like Bitbucket, GitLab, Google Cloud Source Repositories, etc. But GitHub is the most popular among them. GitHub is beginner friendly, and engineers use it for open-source contribution which provides opportunities to contribute to the software. It has a large community of developers and there are many resources including answers on stack overflow.
-We also use GitHub as a resume, hiring managers would likely hire developers with an active GitHub profile over others.
-GitHub offers features that makes it easier for team members to work together
+Other platforms use git technology like Bitbucket, GitLab, Google Cloud Source Repositories, etc. But GitHub is the most popular among them. GitHub is beginner-friendly, and engineers use it for open-source contributions which provide opportunities to contribute to the software. It has a large community of developers and there are many resources including answers on stack overflow. We also use GitHub as a resume, hiring managers would likely hire developers with an active GitHub profile over others. GitHub offers features that make it easier for team members to work together
 
 
 ## Git vs. GitHub  <a name="GitGitHub"></a>  
