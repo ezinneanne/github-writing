@@ -26,7 +26,8 @@ In this article, we are going to cover GitHub, why software engineers use GitHub
 ### Prerequisites
 
 - To complete this article, you will need a GitHub account.
-
+- A text editor (preferably [vscode](https://code.visualstudio.com/download))
+- A terminal (either the command prompt or [VS Code](https://code.visualstudio.com/download))
 - Internet access
 
 ## What is GitHub?  <a name="What is GitHub?"></a>
@@ -46,7 +47,7 @@ GitHub offers features that makes it easier for team members to work together
 | It is a version control system                           |  It is platform that uses version control tools like git and SVN. |
 | It is freely used                                        |  It offers both free and paid packages                      |
 | It was created in 2005                                   |  It was created in 2008                                     |
-| It is maintained by Julio Hamano                         |  Microsoft maintains it                                     |
+| It is maintained by Linux                         |  Microsoft maintains it                                     |
 |We can use on other apps like BitBucket, GitLab and so on.|  It cannot run without git                                  |
 | We can install it locally on a local machine.            | We can access it via a web browser, install it locally on desktop and android and it offers a command-line tool. |
 
@@ -69,7 +70,7 @@ Then give your repository a name. I will name mine `github-tutorial`. I will giv
 
 ![naming a repository](Screenshot_76.png)
 
-After that, leave the remaining details blank and click on `create a repository`
+Leave the remaining details blank and click on `create a repository`
 
 ![creating a repository](Screenshot_77.png)
 
@@ -80,7 +81,7 @@ To clone the repo, go to the green button written `"code"`. Click on it and copy
 ![To clone](Screenshot_60.png)
 
 
-Open the command prompt terminal on your local device or you can use the terminal in vscode. I will use the terminal in my vscode.
+Open the command prompt terminal on your local device or you can use the terminal in vscode. I will use the terminal in my vscode. Click this [link to install vscode](https://code.visualstudio.com/download), if you wish to use it and it is not installed on your device.
 
 After it has opened, enter this:
 
@@ -126,22 +127,22 @@ This will create a new branch on the repository, so I can make changes to it.
 ![creating-new-branch](Screenshot_64.png)
 
 
-Then, I will open my GitHub `README.md` and make some changes.
+Then, I will open my GitHub `README.md` on vscode text editor and make some changes.
 
 ![Making-changes-in-my-file](Screenshot_63.png)
 
 
-After making the changes, enter `git status `
+Then enter `git status `
 
 This is a git command that shows you the current level of operations, detailing what you have done and what you need to do.
 
 ![checking-git-status](Screenshot_65.png)
 
-If you are following this tutorial, when you enter that command, you see that we have not staged the changes for commit. 
+If you are following this tutorial, when you enter that command, you will see that we have not staged the changes for commit. 
 
 
 ## Making a Commit  <a name="Commit"></a>
-After we have cloned the repo and made the changes. Then, we will need to stage the changes with `git add.`
+When we have cloned the repo and made the changes. Then, we will need to stage the changes with `git add.`
 So enter, `git add .`  (don't forget to add the dot)
 
 After that, we will sign our changes, you sign the changes by using `git commit -m "Add new changes"`. This means taking a snapshot of the changes you made. 
@@ -170,7 +171,7 @@ This is where pull requests come in. In this repo, we have made some changes and
 
 ![making-pull-request](Screenshot_69.png)
 
-After creating the pull request, the next option is to merge the pull request. When we will click on the merge pull request, we will end up adding the changes to the main branch.
+The next option is to merge the pull request. When we will click on the merge pull request, we will end up adding the changes to the main branch.
 
 
 ![making-pull-request](Screenshot_70.png)
@@ -178,7 +179,7 @@ After creating the pull request, the next option is to merge the pull request. W
 ![a-merged-pull-request](Screenshot_71.png)
 
 
-After the merge, you can delete the branch you used. With that, you have made your first pull request. You will make more pull requests as you start open source or when you get a job in tech. There are some tools you could use to improve your productivity on GitHub. The activity we did was using the GitHub browser and a terminal. But with time, you would need to use either GitHub Desktop or the CLI.
+You can delete the branch you used. With that, you have made your first pull request. You will make more pull requests as you start open source or when you get a job in tech. There are some tools you could use to improve your productivity on GitHub. The activity we did was using the GitHub browser and a terminal. But with time, you would need to use either GitHub Desktop or the CLI.
 
 
 
@@ -186,18 +187,25 @@ After the merge, you can delete the branch you used. With that, you have made yo
 
 
 
-![GitHubDesktop](Screenshot_58.png)   ![GitHubCLi](Screenshot_59.png)
+![GitHubDesktop](Screenshot_58.png)
+The image above is GitHub desktop, you can run this application on your local device without using a web browser. It provides access to some git commands like cloning, making a pull request or making a commit and other features that promote collaboration.
+
+  
+![GitHubCLi](Screenshot_59.png)
+This is GitHub CLI, with this tool, you can access all the gitHub features on your local device and it works just like a terminal. 
+
+Let us look at some of the differences between GitHub Desktop and GitHub CLI:
 
 | GitHub  Desktop            | GitHub CLI                   |
 | -------------------------- | ---------------------------- |
-| It uses a GUI interface    | It uses a command-line interface |
+| It uses a Graphic User Interface (GUI)   | It allows to run git and github activities on the command-line |
 | It is easier to learn      | It requires more time to learn and master it |
 | It is not helpful in debugging | It is helpful in debugging and solving [merge conflicts](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line) |
-| It does not accept plug-in or add-ons | It can accept certain add-ons or plugins |
+| You cannot create extensions on it| You can create extensions  |
 | It does not offer access to all git features | It offers access to every git feature |
 
-
+For more information on how to use the GitHub desktop, [check this guide](https://docs.github.com/en/desktop) and this [guide for the GitHub cli](https://docs.github.com/en/github-cli)
 
 ## Conclusion  <a name="conclusion"></a>
-By the end of this article, you have learned what GitHub is, why we use GitHub, and compared git and GitHub. We used an example to illustrate how to clone, commit and make a pull request. Finally, we explained GitHub desktop and GitHub CLI.
+By the end of this article, you have learned what GitHub is, why we use GitHub, and compared git with GitHub. We used an example to illustrate how to clone, commit and make a pull request. Finally, we explained GitHub desktop and GitHub CLI.
 You can start contributing to open-source projects on GitHub. Need a guide to begin open source, [check this article](https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/)
