@@ -31,8 +31,7 @@ In this article, you are going to cover GitHub, why software engineers use GitHu
 - You will need to [install git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
 
 ## What is GitHub?  <a name="What is GitHub?"></a>
-GitHub is a cloud platform that uses git technology. The application is used by over 65 million developers around the world to build and ship products. They offer free and paid access to projects for developers, documentation engineers, project managers and other technological folks to collaborate and keep track of changes.
-GitHub provides access to git command-line tools, a desktop GUI and a web-based interface to clone, commit and push projects.
+GitHub is a cloud platform that uses git technology. Over 65 million developers around the world use the application to build and ship products. They offer free and paid access to projects for developers, documentation engineers, project managers, and other technical folks to collaborate and keep track of changes. GitHub provides access to git command-line tools, a desktop GUI, and a web-based interface to clone, commit, and push projects.
 
 ## Why GitHub  <a name="Why GitHub"></a>
 - Other platforms that use git technology include Bitbucket, GitLab, Google Cloud Source Repositories, etc. But GitHub is the most popular of them. 
