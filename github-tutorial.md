@@ -153,24 +153,45 @@ If you are following this tutorial, when you enter that command, you will see th
 
 
 ## Making a Commit  <a name="Commit"></a>
-When we have cloned the repo and made the changes. Then, we will need to stage the changes with `git add.`
-So enter, `git add .`  (don't forget to add the dot)
+Making a commit means taking a snapshot of the changes you made.  This is the git version of "saving a file".
 
-After that, we will sign our changes, you sign the changes by using `git commit -m "Add new changes"`. This means taking a snapshot of the changes you made. 
+#### **How to make a commit**
+When you have cloned the repo and made the changes, You will need to stage the changes with `git add`
+
+The `git add` is a command you can use to add the changes you have made so git can commit it to the main branch.
+
+You can use `git add <file>` to stage the changes you made in the `file` or you can use `git add .` to stage all the possible changes in the entire repository.
+
+Enter, `git add .`  (don't forget to add the dot)
+
+After that, you will commit the changes, you commit the changes by using 
+
+Syntax:
+`git commit -m "a descriptive text"` 
+
+Command:
+`git commit -m "Add new changes"`
 
 ![making-a-commit](Screenshot_66.png)
 
-Then make a commit, that will sign the changes we made. The next thing would be to push it back to your repository online.
+After making a commit. The next thing would be to push it back to your repository online.
+To do that, enter:
 
-![using-git-push](Screenshot_67.png)
+Syntax:
+```
+git push –u origin "name-of-branch-you-created"
+```
 
-Enter :
-
+Command:
 ```
 git push –u origin "new-branch"
 ```
 
-This will move the changes to your repo on GitHub.
+
+![using-git-push](Screenshot_67.png)
+
+
+This will move the changes to `new-branch` on the GitHub repository.
 
 
 ## Pull request  <a name="Pull request"></a>
