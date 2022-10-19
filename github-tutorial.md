@@ -153,7 +153,7 @@ If you are following this tutorial, when you enter that command, you will see th
 
 
 ## Making a Commit  <a name="Commit"></a>
-Making a commit means taking a snapshot of the changes you made.  This is the git version of "saving a file".
+[Making a commit](https://www.atlassian.com/git/tutorials/saving-changes/git-commit) means taking a snapshot of the changes you made.  This is the git version of "saving a file".
 
 #### **How to make a commit**
 When you have cloned the repo and made the changes, You will need to stage the changes with `git add`
@@ -195,11 +195,13 @@ This will move the changes to `new-branch` on the GitHub repository.
 
 
 ## Pull request  <a name="Pull request"></a>
+[A pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) means submitting the changes you made to the main branch. In a pull request, you can review the changes you made before adding those changes to the main branch. With a pull request, you can collaborate with others and review their work too.
+
 Open your GitHub account and you will see something like this.
 
 ![github-comparing-the-changes](Screenshot_68.png)
 
-This is where pull requests come in. In this repo, we have made some changes and those changes are not into the main branch. So GitHub is asking us to make a pull request. Which is submitting those changes we have made to the main branch.
+In this repo, you made some changes, and the changes are not in the main branch. So GitHub is asking you to make a pull request.
 
 Now, click on the `compare & pull request` button
 
@@ -209,15 +211,14 @@ Add descriptive text in the comment box and click on `create pull request`
 
 ![making-pull-request](Screenshot_69.png)
 
-The next option is to merge the pull request. When we will click on the merge pull request, we will end up adding the changes to the main branch.
-
+The next option is to merge the pull request. When you click on the merge pull request, it will add the changes to the main branch.
 
 ![making-pull-request](Screenshot_70.png)
 
 ![a-merged-pull-request](Screenshot_71.png)
 
 
-You can delete the branch you used. With that, you have made your first pull request. You will make more pull requests as you start open source or when you get a job in tech. There are some tools you could use to improve your productivity on GitHub. The activity we did was using the GitHub browser and a terminal. But with time, you would need to use either GitHub Desktop or the CLI.
+You can delete the branch you used. With that, you have made your first pull request. You will make more pull requests as you start open source or when you get a job in tech. There are some tools you could use to improve your productivity on GitHub. The activity you did was using the GitHub browser and a terminal. But with time, you would need to use either GitHub Desktop or the CLI.
 
 
 
@@ -236,7 +237,7 @@ Let us look at some of the differences between GitHub Desktop and GitHub CLI:
 
 | GitHub  Desktop            | GitHub CLI                   |
 | -------------------------- | ---------------------------- |
-| It uses a Graphic User Interface (GUI)   | It allows to run git and github activities on the command-line |
+| It uses a Graphic User Interface (GUI)   | It allows you to run git and github activities on the command-line |
 | It is easier to learn      | It requires more time to learn and master it |
 | It is not helpful in debugging | It is helpful in debugging and solving [merge conflicts](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line) |
 | You cannot create extensions on it| You can create extensions  |
@@ -245,5 +246,5 @@ Let us look at some of the differences between GitHub Desktop and GitHub CLI:
 For more information on how to use the GitHub desktop, [check this guide](https://docs.github.com/en/desktop) and this [guide for the GitHub cli](https://docs.github.com/en/github-cli)
 
 ## Conclusion  <a name="conclusion"></a>
-By the end of this article, you have learned what GitHub is, why we use GitHub, and compared git with GitHub. We used an example to illustrate how to clone, commit and make a pull request. Finally, we explained GitHub desktop and GitHub CLI.
+By the end of this article, you have learned what GitHub is, why we use GitHub, and compared git with GitHub. You used an example to illustrate how to clone, commit and make a pull request. Finally, you learned GitHub desktop and GitHub CLI.
 You can start contributing to open-source projects on GitHub. Need a guide to begin open source, [check this article](https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/)
