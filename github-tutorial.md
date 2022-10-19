@@ -21,21 +21,24 @@
 ![A-github-photo](photo-github.jpeg)
 
 Software engineers use a distributed system like git to store code, review and collaborate with other engineers. Git is a version control system that is used in software companies and by individuals in the technological space. They use the application GitHub as a platform to carry out git activities.
-In this article, we are going to cover GitHub, why software engineers use GitHub, and compare git and GitHub, we will show how to clone, commit and make a pull request. Finally, we will compare the GitHub desktop with GitHub CLI.
+In this article, you are going to cover GitHub, why software engineers use GitHub, and compare git and GitHub. You will clone a repo, commit, and make a pull request. Finally, you will compare the GitHub desktop with the GitHub CLI.
 
 ### Prerequisites
 
-- To complete this article, you will need a GitHub account.
+- To complete this article, you will need a [GitHub account](https://github.com/join).
 - A text editor (preferably [vscode](https://code.visualstudio.com/download))
 - A terminal (either the command prompt or [VS Code](https://code.visualstudio.com/download))
-- Internet access
+- You will need to [install git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
 
 ## What is GitHub?  <a name="What is GitHub?"></a>
-GitHub is a cloud platform that uses git technology. The application is used by over 65 million developers around the world to build and ship products. They offer free and paid access to projects for developers to collaborate and keep track of changes.
+GitHub is a cloud platform that uses git technology. The application is used by over 65 million developers around the world to build and ship products. They offer free and paid access to projects for developers, documentation engineers, project managers and other technological folks to collaborate and keep track of changes.
 GitHub provides access to git command-line tools, a desktop GUI and a web-based interface to clone, commit and push projects.
 
 ## Why GitHub  <a name="Why GitHub"></a>
-Other platforms use git technology like Bitbucket, GitLab, Google Cloud Source Repositories, etc. But GitHub is the most popular among them. GitHub is beginner-friendly, and engineers use it for open-source contributions which provide opportunities to contribute to the software. It has a large community of developers and there are many resources including answers on stack overflow. We also use GitHub as a resume, hiring managers would likely hire developers with an active GitHub profile over others. GitHub offers features that make it easier for team members to work together
+- Other platforms that use git technology include Bitbucket, GitLab, Google Cloud Source Repositories, etc. But GitHub is the most popular of them. 
+- GitHub is beginner-friendly, and engineers use it for open-source contributions. 
+- It has a large community of developers, and there are many helpful resources, including answers on Stack Overflow. 
+- We also use GitHub as a resume. Hiring managers would likely hire developers with an active GitHub profile over others. - GitHub offers features that make it easier for team members to work together. Some features include task management, team administration, community support, etc.
 
 
 ## Git vs. GitHub  <a name="GitGitHub"></a>  
@@ -49,22 +52,25 @@ Other platforms use git technology like Bitbucket, GitLab, Google Cloud Source R
 |We can use on other apps like BitBucket, GitLab and so on.|  It cannot run without git                                  |
 | We can install it locally on a local machine.            | We can access it via a web browser, install it locally on desktop and android and it offers a command-line tool. |
 
-**Note:** In git, there are certain terminologies that are used and I will explain some of them here. 
-A repository is a folder that houses an application you created on GitHub. (Also known as a repo)
+
+
+>**Note:** In git, there are certain terminologies that are used, and I will explain some of them here.
+A "repository" is a folder that houses an application you created on GitHub. (also known as a repo)
+
 
 ## Cloning  <a name="Clone"></a>
-First, we will create an application on GitHub and make some changes to that application. Then we will send it back.
-To do that, you must own a GitHub account. If you don't have one, then you can [create one here](https://github.com/join). 
+Cloning means creating a copy of a repository in your local device.
 
-After that, we will create a repository. Go to your GitHub account and click on `Repositories`
+#### **How to clone**
+You will clone a repository in this section but first, you will create a repository. Go to your GitHub account and click on `Repositories`
 
 ![repositories button](Screenshot_74.png)
 
-When you click on it, click on `New`
+When it opens, click on `New`
 
 ![New Repository button](Screenshot_75.png)
 
-Then give your repository a name. I will name mine `github-tutorial`. I will give it a brief description(this is optional though). I will leave it on public.
+Then give your repository a name. I will name mine `github-tutoria`. I will give it a brief description(this is optional though). I will leave it to `public`. When a repository is `public`, anyone can view it and recommend changes. When it is `private`, you are the only one who can access the repo.
 
 ![naming a repository](Screenshot_76.png)
 
@@ -72,14 +78,14 @@ Leave the remaining details blank and click on `create a repository`
 
 ![creating a repository](Screenshot_77.png)
 
-Now, I will clone the repository to make some changes on my device. Cloning means creating a copy of that application in your local device.
+Now, I will clone the repository to make some changes on my device. 
 
 To clone the repo, go to the green button written `"code"`. Click on it and copy the link.
 
 ![To clone](Screenshot_60.png)
 
 
-Open the command prompt terminal on your local device or you can use the terminal in vscode. I will use the terminal in my vscode. Click this [link to install vscode](https://code.visualstudio.com/download), if you wish to use it and it is not installed on your device.
+Open the [command prompt terminal](https://www.geeksforgeeks.org/using-git-on-commandline/) on your local device or you can use the terminal in vscode. I will use the terminal in my vscode. 
 
 After it has opened, enter this:
 
@@ -96,17 +102,18 @@ git clone 'https://github.com/ezinneanne/github-tutorial.git'
 ```
 ![gitclonelink](Screenshot_61.png)
 
+That will create the folder in your local device.
+
 ![git-in-a-folder](Screenshot_62.png)
 
 
-That will create the folder in your local device.
 As you can see, the folder is already showing on my local device.
 
 To make the changes, I will `CD` to the folder, `github-tutorial`.
 
 Syntax:
 ```
-cd the repo you cloned
+cd [the repo you cloned]
 ```
 
 Command:
@@ -114,8 +121,14 @@ Command:
 cd github-tutorial
 ```
 
-Create a new branch,
+Create a new branch. You are creating a new branch so you can make changes without affecting the main branch, and afterward, you can choose to merge these changes into your main branch.
 
+Syntax:
+```
+git checkout -b "name of the new branch"
+```
+
+Command:
 ```
 git checkout -b "new-branch"
 ```
@@ -125,12 +138,12 @@ This will create a new branch on the repository.
 ![creating-new-branch](Screenshot_63.png)
 
 
-Then, I will open my GitHub `README.md` on vscode text editor and make some changes.
+Then, open your GitHub `README.md` on vscode text editor and make some changes.
 
 ![Making-changes-in-my-file](Screenshot_64.png)
 
 
-And enter `git status ` afterwards.
+Enter `git status ` afterwards.
 
 This is a git command that shows you the current level of operations, detailing what you have done on the repository and what you need to do.
 
